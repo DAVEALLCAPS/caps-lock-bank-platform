@@ -38,3 +38,13 @@ button:hover {
     margin: 0;
     font-size: 2em;
 }
+
+#forms-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#transaction-form,
+#send-money-form {
+    width: 45%; 
+}
