@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPS LOCK Bank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container">
+        <h1>Login</h1>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+    <div id="dashboard" style="display:none;">
+        <h1>Dashboard</h1>
+        <h2>Current Balance: $<span id="balance">0</span></h2>
+        <div id="transaction-form" style="display:none;">
+            <h3>Transactions</h3>
+            <select id="transaction-type">
+                <option value="Deposit">Deposit</option>
+                <option value="Withdraw">Withdraw</option>
+            </select>
+            <input type="number" id="transaction-amount" placeholder="Amount">
+            <button onclick="addTransaction()">Execute Transaction</button>
+        </div>
+        <div id="transactions" style="display:none;">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
